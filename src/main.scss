@@ -1,0 +1,34 @@
+
+//@import "~bootstrap/scss/bootstrap";
+
+$primary : #ff9900;
+$light-green: #7ed56f;
+$medium-green: #55c57a;
+$dark-green: #28b485;
+
+body{
+    background-color: $light-green;
+}
+
+.btn{
+    &-primary{
+        text-transform: uppercase;
+        color: #464646;
+        background: $primary;
+        border: 1px solid $primary;
+        border-radius: 0;
+        transition: .3s background ease-in;
+    }
+    &:hover,
+    &:active{
+        color: #464646;
+        background:lighten($primary, 15%);
+        border: $primary;
+    }
+}
+
+input[type="text"]{
+    border: 0;
+    border-bottom: 1px solid #464646;
+    border-radius: 0;
+}
