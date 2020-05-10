@@ -51,25 +51,56 @@ body{
 
     .text-box{
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 40%;
+        left: 45%;
         transform: translate(-40%, -50%);
         .heading-primary{
             color:#fff;
             text-transform: uppercase;
+            backface-visibility: hidden;
             &-main{
                 display: block;
                 font-size: 60px;
                 font-weight: 400;
                 letter-spacing: 30px;
+                animation: moveInLeft 1s ease-out;
             }
             &-sub{
                 display: block;
                 font-size: 20px;
                 font-weight: 700;
                 letter-spacing: 16px;
+                animation: moveInRight 1s ease-out;
             }
         }
     }
     
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
