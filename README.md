@@ -1,6 +1,5 @@
-![Webpack image](https://images.ctfassets.net/nj2caiz7hkjw/3VoFdDTP5SowwESKIOAgm/a111ddd784928b61045c8e811e1769be/webpack.png?fm=webp)
 
-# Webpack-Configuration
+# Webpack-Configuration for project
   A complete webpack set up for any project
 
 Install all Dependencies 
