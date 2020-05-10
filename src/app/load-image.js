@@ -1,10 +1,10 @@
-import url from '../assets/image/webpack.png'
+import url from '../assets/image/logo-green-2x.png'
 
-// export const addImage = function() {
-//     const image = document.createElement('img');
-//         image.alt = 'Webpack';
-//         image.src = url;
+export const addImage = function() {
+    // const image = document.createElement('img');
+    //     image.alt = 'logo';
+    //     image.src = url;
     
-//     const backgroundImage = document.querySelector('#image');
-//     backgroundImage.appendChild(image)
-// }
+    // const logo = document.querySelector('.logo-box');
+    // logo.appendChild(image)
+}
