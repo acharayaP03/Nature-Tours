@@ -35,45 +35,47 @@ body{
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     position: relative;
 
-    .logo-box{
+    &__logo-box{
         position: absolute;
         top: 4rem;
         left: 4rem;
+    }
 
-        .logo{
-            height: 3.5rem;
+    &__logo{
+        height: 3.5rem;
+        color: #fff;
+        font-size: 24px;
+
+        &::after{
+            content: " ";
+            width: 2px;
+            display: block;
+            height: 1.5rem;
             color: #fff;
-            font-size: 24px;
-
-            &::after{
-                content: " ";
-                width: 2px;
-                display: block;
-                height: 1.5rem;
-                color: #fff;
-            }
         }
     }
 
-    .text-box{
+
+    &__text-box{
         position: absolute;
         text-align: center;
         top: 40%;
         left: 45%;
         transform: translate(-40%, -50%);
+
         .heading-primary{
             color:#fff;
             text-transform: uppercase;
             backface-visibility: hidden;
             margin-bottom: 6rem;
-            &-main{
+            &--main{
                 display: block;
                 font-size: 6rem;
                 font-weight: 400;
                 letter-spacing: 3rem;
                 animation: moveInLeft 1s ease-out;
             }
-            &-sub{
+            &--sub{
                 display: block;
                 font-size: 2rem;
                 font-weight: 700;
@@ -105,14 +107,14 @@ body{
         box-shadow: 0 5px 10px rgba(0 ,0 ,0, .20);
     }
 
-    &-white{
+    &--white{
         background-color: #fff;
         color: #777;
         &::after{
             background-color: #fff;
         }
     }
-    &-animated{
+    &--animated{
         animation: moveInBottom 0.5s ease-out 0.75s;
         animation-fill-mode: backwards;
     }
