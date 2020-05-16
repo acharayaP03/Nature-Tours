@@ -42,7 +42,7 @@
         <span class="heading-primary--sub">is where life happens</span>
       </h1>
 
-      <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+      <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
     </div>
     
     </header>
@@ -103,7 +103,7 @@
                 </div>
              </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-mb-8">
                 <h2 class="heading-secondary">
                     Exciting Tours For adventurous people.
@@ -133,7 +133,7 @@
                                     <p class="card__price--only">Only</p>
                                     <p class="card__price--value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                                     <p class="card__price--only">Only</p>
                                     <p class="card__price--value">$497</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                                     <p class="card__price--only">Only</p>
                                     <p class="card__price--value">$897</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -290,32 +290,55 @@
                 </div>
             </div>
         </section>
-
-        <section class="footer">
-            <div class="footer__logo-box">
-                <img src="assets/image/logo-green-1x.png" alt="Full logo" class="footer__logo">
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Careers</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        Build by <a href="#" class="footer__link">Trishten Ac</a> Copyrgight &copy; Trishten Ac Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique earum, nemo dolor nulla consequuntur aperiam dolore facilis porro, optio ipsa reiciendis illo! Ducimus asperiores, expedita non praesentium ea ab vero.</p>
-                </div>
-            </div>
-        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="assets/image/logo-green-1x.png" alt="Full logo" class="footer__logo">
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Build by <a href="#" class="footer__link">Trishten Ac</a> Copyrgight &copy; Trishten Ac Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique earum, nemo dolor nulla consequuntur aperiam dolore facilis porro, optio ipsa reiciendis illo! Ducimus asperiores, expedita non praesentium ea ab vero.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="assets/image/nat-3.jpg" alt="Nature" class="popup__img">
+                <img src="assets/image/nat-9.jpg" alt="Nature" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary">
+                    Start booking now
+                </h2>
+                <h3 class="heading-tertiary u-mb-2">
+                   Important &mdash; Please read before booking
+                </h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis perferendis temporibus voluptate necessitatibus tempora deserunt, dicta aperiam architecto veritatis laborum voluptatum dolores ut expedita cum voluptatibus obcaecati nihil facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis perferendis temporibus voluptate necessitatibus tempora deserunt, dicta aperiam architecto veritatis laborum voluptatum dolores ut expedita cum voluptatibus obcaecati nihil facilis?
+                </p>
+
+                <a href="#" class="btn btn--green">Book Now</a>
+            </div>
+        </div>
+    </div>
   </body>
  
 </html>

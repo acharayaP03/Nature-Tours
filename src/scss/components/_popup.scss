@@ -1,0 +1,88 @@
+.popup{
+    background-color: rgba($color-black, 0.7);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+
+    &__content{
+        display: table;
+        border-radius: 3px;
+        width: 75%;
+        box-shadow: 0 2rem 4rem rgba($color-black, 0.15);
+        background-color: $color-white;
+        overflow: visible;
+
+        @include centerElement;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+        transition: all 0.4s;
+    }
+
+    &__left{
+        width: 33.333333%;
+        display: table-cell;
+
+    }
+
+    &__right{
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img{
+        display: block;
+        width: 100%;
+    }
+
+    //text column
+    &__text{
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid lighten($color-grey-dark, 40%);
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+
+    //popup open and close
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1); 
+    }
+
+    &__close{
+        &:link,
+        &:visited{
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s 0.3s;
+        }
+        &:hover{
+            color: $color-primary;
+        }
+    }
+}
