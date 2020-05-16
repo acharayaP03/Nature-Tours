@@ -26,7 +26,14 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                use:["html-loader"]
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: {
+                        attrs: [":src"]
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)?$/i,
@@ -35,7 +42,7 @@ module.exports = {
                         loader: 'file-loader',
                         options:{
                             name: "[name].[hash].[ext]",
-                            outputPath: "assets",
+                            outputPath: "assets/images",
                             esModule: false
                         }
                     }
@@ -47,11 +54,25 @@ module.exports = {
                   {
                     loader: 'file-loader',
                     options: {
-                        outputPath: 'assets',
+                        outputPath: 'assets/fonts',
+                      }
+                  }
+                ]
+            },
+            {
+                test:  /\.(mp4|webm)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        name: "[name].[hash].[ext]",
+                        outputPath: 'assets/vedios',
+                        esModule: false
                       }
                   }
                 ]
             }
+            
         ]
     }
 }
