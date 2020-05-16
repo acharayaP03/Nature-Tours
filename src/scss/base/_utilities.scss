@@ -1,15 +1,27 @@
 .u-center-text{
-    text-align: center;
+    text-align: center !important;
+}
+
+.u-mr-2{
+    margin-right: 2rem;
 }
 
 .u-mb-8{
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
 }
 
 .u-mb-2{
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
+}
+
+.u-mb-4{
+    margin-bottom: 4rem !important;
 }
 
 .u-mt-8{
-    margin-top: 8rem;
+    margin-top: 8rem !important;
+}
+
+.d-inline-block{
+    display: inline-block!important;
 }
