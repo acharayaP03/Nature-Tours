@@ -13,7 +13,7 @@ html{
     @include respond(tab-land){
         font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
     }
-    
+
     //for both mobile and tab-port max width 900px works
     @include respond(tab-port){
         font-size: 50%; //1 rem = 8px 8/16 = 50%
@@ -26,6 +26,11 @@ html{
 
 body{
     box-sizing: border-box;
+    padding: 1rem;
+
+    @include respond(tab-port){
+        padding: 0;
+    }
 }
 
 

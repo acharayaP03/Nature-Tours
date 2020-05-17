@@ -4,7 +4,15 @@
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+        @include respond(tab-port){
+            margin-bottom: $gutter-vertical-small;
+        }
     }
+    @include respond(tab-port){
+        max-width: $max-width-small;
+        padding: 0 2rem;
+    }
+
     @include clearfix;
 
     //this attribute selector will target all the classes that starts with col-
@@ -12,6 +20,15 @@
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond(tab-port){
+            width: 100%!important;
         }
     }
     .col-1-of-2{
