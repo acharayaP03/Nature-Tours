@@ -14,6 +14,9 @@
         width: 90%;
         display: block;
         transition: all 0.3s;
+        @include respond(tab-land){
+            width: 100%;
+        }
 
         &:focus{
             outline: none;
