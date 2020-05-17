@@ -12,3 +12,48 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+// Media qurey Manager
+
+/*
+    0 - 600px:      phone
+    600 - 900px:    Tablet Portrait,
+    900 - 1200px:   Tablet Landscape
+    [1200 - 1800]:  is where our normal styles will be applied,
+    1800px +        Big desktop,
+*/
+
+/*
+    $break-point argument choices:
+
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+*/
+
+
+//in media queries browser defined fontsize always takes precedence. which is 16px, hench always use em rather than rem.
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media (max-width : 37.5em){ //600px
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width : 56.25em){ //900px
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width : 75em){ //1200px
+            @content;
+        }
+    }
+    @if $breakpoint == bid-desktop {
+        @media (min-width : 112.5){ //1800px +
+            @content;
+        }
+    }
+}
