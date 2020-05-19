@@ -132,7 +132,10 @@
         font-weight: 100;
     }
 
-    @include respond(tab-port){
+    // if the device is touch the hover effect will not applicable, then our media query will fail, 
+    // setting hover : none will make this media query enabled on all touch device regard less of their width.
+    @media only screen and (max-width : 56.25em),
+            only screen and (hover: none){
       
         height: auto;
         border-radius: $border-radius;

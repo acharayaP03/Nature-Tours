@@ -10,9 +10,12 @@
 .section-features{
     margin-top: -12rem;
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('./assets/image/hero.jpg');
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('./assets/image/hero-small.jpg');
     background-size: cover;
 
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em){    
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('./assets/image/hero.jpg');
+    }
     transform: skewY(-7deg);
 
     & > * {

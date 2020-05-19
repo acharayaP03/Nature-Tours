@@ -29,7 +29,12 @@
         float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        overflow: hidden;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path:  circle(50% at 50% 50%);
+        }
         //when elemets are floated only use transform X or Y
         transform: translateX(-3rem) skewX(12deg);
         @include respond(phone){
